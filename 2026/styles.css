@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -10,7 +14,11 @@
 body {
     line-height: 1.7em;
     color: #7f8c8d;
-    font-size: 13px;
+    font-size: 14px;
+}
+
+[id] {
+    scroll-margin-top: 60px;
 }
 
 h1,
@@ -21,11 +29,6 @@ h5,
 h6,
 label {
     color: #222222;
-}
-
-.pure-img-responsive {
-    max-width: 100%;
-    height: auto;
 }
 
 /*
@@ -39,7 +42,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #21d2da;
+    color: #03898f;
     text-decoration: underline;
 }
 
@@ -59,23 +62,6 @@ a:focus {
 }
 
 /*
- * -- PURE FORM STYLES --
- */
-.pure-form label {
-    margin: 1em 0 0;
-    font-weight: bold;
-    font-size: 100%;
-}
-
-.pure-form input[type] {
-    border: 2px solid #ddd;
-    box-shadow: none;
-    font-size: 100%;
-    width: 100%;
-    margin-bottom: 1em;
-}
-
-/*
  * -- PURE BUTTON STYLES --
  */
 .pure-button {
@@ -85,13 +71,6 @@ a:focus {
     border-radius: 5px;
 }
 
-a.pure-button-primary {
-    background: white;
-    color: #045C61;
-    border-radius: 5px;
-    font-size: 120%;
-}
-
 /*
  * -- MENU STYLES --
  */
@@ -99,9 +78,6 @@ a.pure-button-primary {
     padding: 0.5em;
     text-align: center;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
-}
-
-.home-menu {
     background: white;
     color: #0d0c2e;
 }
@@ -138,7 +114,7 @@ a.pure-button-primary {
 .home-menu li a:focus {
     background: none;
     border: none;
-    color: #21d2da;
+    color: #03898f;
 }
 
 /*
@@ -200,10 +176,6 @@ a.pure-button-primary {
         1px 1px 0 #000;
 }
 
-span.bold {
-    font-weight: bold;
-}
-
 .splash-head {
     font-size: 20px;
     font-weight: bold;
@@ -241,15 +213,17 @@ span.bold {
     text-align: justify;
 }
 
+@media (max-width: 47.99em) {
+    .content p {
+        text-align: left;
+    }
+}
+
 .content-head {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin: 2em 0 1em;
-}
-
-.content-head-ribbon {
-    color: white;
 }
 
 .content-subhead {
@@ -261,7 +235,7 @@ span.bold {
 }
 
 .ribbon {
-    background: #c6d8d2;
+    background: #e8f0ed;
 }
 
 /*
@@ -280,7 +254,7 @@ span.bold {
 .menu-toggle:hover,
 .menu-toggle:focus {
     text-decoration: none;
-    color: #21d2da;
+    color: #03898f;
 }
 
 @media (max-width: 47.99em) {
@@ -343,4 +317,120 @@ span.bold {
     .splash-head {
         font-size: 300%;
     }
+}
+
+/*
+ * -- CTA BUTTON --
+ */
+.splash-cta {
+    margin-top: 1.5em;
+}
+
+.splash-cta .pure-button {
+    font-size: 110%;
+    padding: 0.7em 2.5em;
+    background: white;
+    color: #045C61;
+    font-weight: bold;
+    border-radius: 5px;
+    text-shadow: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.splash-cta .pure-button:hover {
+    background: #045C61;
+    color: white;
+}
+
+/*
+ * -- KEY DATES --
+ */
+.key-dates {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1.5em 0;
+}
+
+.key-date-item {
+    text-align: center;
+    padding: 0.8em 1.2em;
+    background: white;
+    border-radius: 6px;
+    border-left: 3px solid #045C61;
+}
+
+.key-date-item .date-label {
+    font-size: 0.85em;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.key-date-item .date-value {
+    font-weight: bold;
+    color: #222;
+}
+
+.key-date-item.past {
+    opacity: 0.5;
+}
+
+/*
+ * -- SPONSOR --
+ */
+.sponsor-highlight {
+    text-align: center;
+    margin: 1.5em 0;
+    padding: 1.2em;
+    background: #f9f9f9;
+    border-radius: 6px;
+    border: 1px solid #eee;
+}
+
+.sponsor-highlight em {
+    font-size: 1.1em;
+}
+
+/*
+ * -- FOOTER --
+ */
+.site-footer {
+    background: #2c2c2c;
+    color: #999;
+    padding: 2em 1em;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.site-footer a {
+    color: #ccc;
+}
+
+.site-footer a:hover {
+    color: white;
+}
+
+.site-footer .footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.site-footer .footer-links {
+    margin-bottom: 1em;
+}
+
+.site-footer .footer-links a {
+    margin: 0 0.8em;
+}
+
+/*
+ * -- ARCHIVE SUMMARY --
+ */
+.archive-summary {
+    text-align: center;
+    padding: 1em 0;
+    color: #555;
+    font-size: 1.05em;
 }
