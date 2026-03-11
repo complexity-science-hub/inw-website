@@ -257,6 +257,28 @@ a:focus {
     color: #03898f;
 }
 
+/*
+ * -- DROPDOWN MENU --
+ */
+.home-menu .pure-menu-children {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 4px 4px;
+    z-index: 5;
+    min-width: 180px;
+}
+
+.home-menu .pure-menu-children .pure-menu-link {
+    color: #045C61;
+    padding: 0.5em 1.2em;
+}
+
+.home-menu .pure-menu-children .pure-menu-link:hover,
+.home-menu .pure-menu-children .pure-menu-link:focus {
+    color: #03898f;
+    background: #f5f5f5;
+}
+
 @media (max-width: 47.99em) {
     .menu-toggle {
         display: block;
@@ -282,6 +304,21 @@ a:focus {
 
     .home-menu .pure-menu-heading {
         text-align: left;
+    }
+
+    .home-menu .pure-menu-has-children > .pure-menu-link::after {
+        display: none;
+    }
+
+    .home-menu .pure-menu-children {
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
+        background: #f9f9f9;
+    }
+
+    .home-menu .pure-menu-children .pure-menu-link {
+        font-size: 0.9em;
     }
 }
 
