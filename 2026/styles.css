@@ -463,6 +463,36 @@ a:focus {
 }
 
 /*
+ * -- COMMITTEE GRID --
+ */
+.committee-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1em 0 1.5em;
+}
+
+.committee-member {
+    flex: 1 1 calc(50% - 0.5em);
+    min-width: 220px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    border-left: 3px solid #045C61;
+    padding: 0.8em 1.2em;
+}
+
+.member-name {
+    font-weight: bold;
+    color: #222;
+}
+
+.member-affiliation {
+    font-size: 0.85em;
+    color: #7f8c8d;
+    margin-top: 0.2em;
+}
+
+/*
  * -- ARCHIVE SUMMARY --
  */
 .archive-summary {
