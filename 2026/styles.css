@@ -501,3 +501,56 @@ a:focus {
     color: #555;
     font-size: 1.05em;
 }
+
+/*
+ * -- SCHEDULE --
+ */
+.schedule-notice {
+    background: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 6px;
+    padding: 0.8em 1.2em;
+    text-align: center;
+    color: #856404;
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+
+.schedule-day {
+    color: #045C61;
+    border-bottom: 2px solid #045C61;
+    padding-bottom: 0.3em;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.schedule-session {
+    border-left: 3px solid #045C61;
+    padding: 0.8em 1.2em;
+    margin: 1.2em 0;
+}
+
+.schedule-time {
+    font-size: 0.85em;
+    color: #7f8c8d;
+    display: block;
+    margin-bottom: 0.3em;
+}
+
+.schedule-talk {
+    padding: 0.5em 0;
+}
+
+.schedule-talk + .schedule-talk {
+    border-top: 1px solid #eee;
+}
+
+.schedule-break {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    padding: 0.6em 0;
+    margin: 0.5em 0;
+}
