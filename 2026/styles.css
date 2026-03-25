@@ -552,6 +552,18 @@ a:focus {
     border-top: 1px solid #eee;
 }
 
+.talk-type {
+    margin-left: 0.4em;
+    cursor: help;
+}
+
+.schedule-legend {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-top: 0;
+}
+
 .schedule-break {
     text-align: center;
     color: #7f8c8d;
