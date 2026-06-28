@@ -1,0 +1,32 @@
+# Illicit Networks Workshop — https://illicitnetworksworkshop.com
+# All crawlers, including AI/generative engines, are welcome.
+
+User-agent: *
+Allow: /
+
+# AI / generative-search crawlers (explicitly allowed for citation)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://illicitnetworksworkshop.com/sitemap.xml
