@@ -544,6 +544,12 @@ a:focus {
     margin-bottom: 0.3em;
 }
 
+.schedule-chair {
+    font-size: 0.85em;
+    color: #045C61;
+    margin-bottom: 0.4em;
+}
+
 .schedule-talk {
     padding: 0.5em 0;
 }
